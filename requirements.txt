@@ -1,0 +1,9 @@
+Flask==1.1.2
+gunicorn>=19.9.0
+itsdangerous==1.1.0
+jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.5
+numpy>=1.9.2
+tenserflow==2.4.1
+keras==2.4.3
