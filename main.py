@@ -2,7 +2,6 @@
 
 from flask import Flask, flash, render_template, redirect, request, url_for, send_from_directory
 import os, uuid
-
 from src import captions
 
 UPLOAD_FOLDER = './static/images/'
@@ -64,11 +63,12 @@ def upload_file():
 			if file and allowed_file(file.filename):
 				file.save(os.path.join(app.config['UPLOAD_FOLDER'], file_names[i]))
 
-		args={
-			'image' : "static/images/" + file_names[0],
-			'model_path' : 'src/model/model_4.h5'
+		#args={
+		#	'image' : "static/images/" + file_names[0],
+			#'model_path' : 'src/model/model_4.h5'
 			#'vocab_path' : 'src/vocab.p'
-		}
+		#}
+		args= "static/images/" + file_names[0]
 		#returns created caption
 		caption = captions.gen_caption(args)
 	
