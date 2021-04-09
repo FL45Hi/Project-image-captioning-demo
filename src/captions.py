@@ -22,7 +22,7 @@ from keras.utils import plot_model
 import warnings
 warnings.filterwarnings("ignore")
 
-model = load_model("model_4.h5")
+model = load_model("src/model_4.h5")
 
 def VGG():
     model = VGG16(weights='imagenet')
@@ -36,7 +36,7 @@ def VGG():
 VGG_model = VGG()
 
 
-vocab = pickle.load(open("/src/new_vocabulary.p", 'rb'))
+vocab = pickle.load(open("src/new_vocabulary.p", 'rb'))
 vocab_size = len(vocab)
 
 def word_index(vocab):
@@ -106,8 +106,8 @@ def gen_caption(pic):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--image', type=str, required=True, help='input image for generating caption')
-    parser.add_argument('-m', '--model_path', type=str, default='src/model_4.h5', help='path for trained model')
+    #parser.add_argument('--image', type=str, required=True, help='input image for generating caption')
+    #parser.add_argument('-m', '--model_path', type=str, default='src/model_4.h5', help='path for trained model')
     #parser.add_argument('--vocab_path', type=str, default='src/vocab/vocab.json', help='path for vocabulary wrapper')
 
     args = parser.parse_args()
