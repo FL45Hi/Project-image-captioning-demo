@@ -5,5 +5,5 @@ jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
 numpy>=1.9.2
-tenserflow==2.4.1
-keras==2.4.3
+tenserflow>=2.0.1
+keras>=2.0.1
