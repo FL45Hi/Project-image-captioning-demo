@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Image Captioning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="static/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="static/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <header class="masthead">
+
+        <div class="container h-100">
+            <div class="row h-100">
+
+                <div class="col-lg-6 my-auto">
+                    <div class="container my-auto">
+                        <img src={{content}} class="img-responsive" alt="content" style="height: auto; width: 100%; max-height: 450px">
+                        <h2 style="text-align:center">
+                            EN: {{ caption }}
+                        </h2>
+                        <p></p>
+                        <h2 style="text-align:center">
+                            HN: {{ hn_caption }}
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <!-- <h2>Unlimited Features, Unlimited Fun</h2> -->
+                <p class="text-muted">This project is an implementation of the paper below.</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <img src="static/img/paper.png" style="max-width: 100%;">
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="container-fluid">
+                            <a target=_blank href="https://arxiv.org/pdf/1411.4555.pdf">
+                                <h3>Show and Tell: A Neural Image Caption Generator</h3>
+                            <p class="text-muted">Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container ">
+            <p>&copy; B2.Batch,  Ain't No Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js "></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js "></script>
+
+</body>
+
+
+</html>
